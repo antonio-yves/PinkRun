@@ -9,6 +9,7 @@ public class NextLevelScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            GetComponent<AudioSource>().Play();
             GameController.instance.ShowLevelComplete();
         }
     }
